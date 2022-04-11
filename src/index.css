@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #261037;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+table {
+    margin-top: 0px !important;
+    border: 0px !important;
+}
+
+.sideMenu {
+    background-color: #491055;
+    display: flex;
+    flexDirection: column;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    height: 100%;
+}
+
+.mainCenter {
+    /*margin-left: 10px;*/
+    padding-top: 100px;
+    display: flex;
+    /*background-color: #3e42ac;*/
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    padding-left: 200px;
+    /*color: #ffffff;*/
+    display: flex;
+    flexDirection: column;
+    position: fixed;
+    font-size: 13px;
+}
+
+/*.MuiPaper-root {*/
+/*    background-color: #2a153b !important;*/
+/*    color: #ffffff !important;*/
+/*}*/
+
+.MuiTableCell-body {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    margin: 0px !important;
+    height: 30px;
+}
+
+.MuiTablePagination-root {
+    color: #ffffff !important;
+}
+
+.MuiPaper-root {
+    background-color: #261037 !important;
+}
+
+/*.MuiTableRow-root {*/
+/*    padding: 0px !important;*/
+/*    margin: 0px !important;*/
+/*    height: 20px !important;*/
+/*}*/
+
+.playersOverview {
+    width: 400px;
+    background-color: #261037;
+    color: #fff !important;
+}
+
+.playersOverview-players {
+    height: 530px;
+    overflow: scroll;
+    width: 100%;
+}
+
+.playersOverview-header {
+    background-color: #1A102F;
+    height: 60px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.tactics {
+    /*width: 0px;*/
+    clear: both;
+    background-color: #007521;
+    display: flex;
+    color: #ffffff;
+}
+
+.tactics-settings {
+    margin: 8px;
+    width: 180px;
+    height: 545px;
+    color: #ffffff !important;
+    background-color: #004538 !important;
+    border-radius: 15px;
+}
+
+.teamOverview {
+    width: 600px;
+    height: 500px;
+    padding-left: 5px;
+    background-image: url("football-field.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.teamOverview-header {
+    font-size: 24px;
+    /*font-weight: bold;*/
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tactics-settings-header {
+    font-size: 20px;
+    /*font-weight: bold;*/
+    text-align: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tactics-substitutes-header {
+    font-size: 24px;
+    /*font-weight: bold;*/
+    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tactics-substitutes {
+    width: 160px !important;
+    height: 590px;
+    text-align: center !important;
+    background-color: #007521 !important;
+    /*display: flex;*/
+    color: #ffffff !important;
+}
+
+.subs {
+    padding-left: 20px;
+    text-align: center;
+    width: 160px;
+}
+
+.subs-player {
+    width: 100%;
+    text-align: center;
+}
+
+.subs-player .fieldPlayer {
+    padding: 5px 0px 5px 5px;
+    text-align: center;
+    height: 75px;
+}
+
+.subs-player .fieldPlayer .jersey {
+    position: absolute;
+    padding-left: 25px;
+    height: 100px;
+}
+
+.subs-player .fieldPlayer .bottomBar {
+    margin-top: 40px;
+    position: relative;
+    z-index: 100;
+}
+
+.teamOverviewLine {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamOverviewLine .attack {
+    padding-top: 20px;
+}
+
+.teamOverviewLine .midfield {
+    padding-top: 45px;
+}
+
+.teamOverviewLine .defence {
+    padding-top: 30px;
+}
+
+.teamOverviewLine .goalkeeper {
+    padding-top: 30px;
+}
+
+/*  fieldplayer */
+.fieldPlayer {
+    padding-right: 10px;
+    float: left;
+    min-width: 110px;
+    border-radius: 7px;
+    text-align: center;
+    vertical-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    position: relative;
+}
+
+.fieldPlayer .jersey {
+
+}
+
+.fieldPlayer .MuiButton-startIcon {
+    margin: 0px !important;
+}
+
+.fieldPlayer button {
+    min-width: 18px;
+    min-height: 18px;
+    max-width: 18px;
+    max-height: 18px;
+    position: absolute;
+}
+
+.fieldPlayer button:disabled {
+    background-color: white;
+}
+
+.fieldPlayer .jersey IMG {
+    height: 60px;
+}
+
+.fieldPlayer .club {
+    margin-top: 0px;
+    padding-top: 1px;
+    border-radius: 7px;
+    background-color: #635982;
+    height: 25px;
+}
+
+.fieldPlayer .bottomBar {;
+    background-color: #202120;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    position: relative;
+}
+
+.fieldPlayer .playerName {;
+    padding-left: 23px;
+    padding-right: 23px;
+}
